@@ -1,0 +1,471 @@
+@use "../base/variables" as *;
+
+// header start ---------------------------------------------------------
+.header {
+  &__wrapper {
+  }
+
+  &__logo {
+  }
+}
+
+// header end ---------------------------------------------------------
+
+// hero start ---------------------------------------------------------
+.hero {
+  &__wrapper {
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+  }
+
+  &__flex {
+  }
+
+  &__left-item {
+  }
+
+  &__left-item-btn {
+  }
+
+  &__right-item {
+  }
+
+  &__box-wrapper {
+  }
+
+  &__box {
+  }
+
+  &__box-title {
+  }
+
+  &__box-subtitle {
+  }
+
+  &__logos {
+  }
+
+  &__logo {
+  }
+}
+
+.hero-bg {
+  &__wrapper-big {
+  }
+
+  &__wrapper-small {
+  }
+
+  &__wrapper-main {
+  }
+}
+
+// hero end ---------------------------------------------------------
+
+// mvp start ---------------------------------------------------------
+.mvp {
+  &__wrapper {
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+  }
+}
+
+.mvp-body {
+  &__title {
+  }
+
+  &__flex {
+  }
+}
+.mvp-card {
+  &__img {
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+}
+
+// mvp end ---------------------------------------------------------
+
+// believe start ---------------------------------------------------------
+.belive {
+  &__wrapper {
+  }
+
+  &__title {
+  }
+}
+
+.belive-tabs {
+  &__triggers {
+  }
+
+  &__trigger {
+  }
+
+  &__body {
+  }
+}
+.belive-tab-content {
+  &__header {
+  }
+
+  &__body {
+  }
+
+  &__body-left-box {
+  }
+
+  &__flex {
+  }
+
+  &__old {
+  }
+
+  &__old-title {
+  }
+
+  &__old-img {
+  }
+
+  &__procents {
+  }
+
+  &__procents-title {
+  }
+
+  &__procents-elements {
+  }
+
+  &__citat {
+  }
+
+  &__citat-text {
+  }
+
+  &__citat-subtitle {
+  }
+
+  &__words {
+  }
+
+  &__word {
+  }
+
+  &__body-img {
+  }
+}
+.belive-tab-content-procents-element {
+  &__num {
+  }
+
+  &__imgs {
+  }
+
+  &__img {
+  }
+
+  &__title {
+  }
+}
+
+// believe end ---------------------------------------------------------
+
+// Why-works start ---------------------------------------------------------
+.why-work {
+  &__wrapper {
+  }
+
+  &__title {
+  }
+
+  &__body {
+  }
+}
+
+.why-work-item {
+  &__1 {
+  }
+
+  &__num {
+  }
+
+  &__text-box {
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__2 {
+  }
+
+  &__3 {
+  }
+
+  &__4 {
+  }
+
+  &__5 {
+  }
+
+  &__6 {
+  }
+}
+
+// Why-works end ---------------------------------------------------------
+
+// guarantees start ---------------------------------------------------------
+.guarantees {
+  &__wrapper {
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+  }
+
+  &__body {
+  }
+
+  &__footer {
+  }
+}
+
+.guarantees-item {
+  &__img {
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+}
+.guarantees-footer-item {
+  &__borders {
+  }
+
+  &__border {
+  }
+
+  &__border--left-top {
+  }
+
+  &__border--right-top {
+  }
+
+  &__border--left-bottom {
+  }
+
+  &__border--right-bottom {
+  }
+
+  &__text-wrapper {
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__imagers {
+  }
+
+  &__img {
+  }
+}
+
+// guarantees end ---------------------------------------------------------
+
+// Pricing start ---------------------------------------------------------
+.pricing {
+  &__wrapper {
+  }
+
+  &__titl {
+  }
+
+  &__body {
+  }
+
+  &__subtitle {
+  }
+}
+
+.pricing-item {
+  &__header {
+  }
+
+  &__header-text-box {
+  }
+
+  &__header-title {
+  }
+
+  &__header-text {
+  }
+
+  &__header-img {
+  }
+
+  &__body {
+  }
+
+  &__body-item {
+  }
+
+  &__footer {
+  }
+
+  &__footer-title {
+  }
+
+  &__footer-subtitle {
+  }
+
+  &__footer-button {
+  }
+}
+
+// Pricing end ---------------------------------------------------------
+
+// plan start ---------------------------------------------------------
+.plan {
+  &__wrapper {
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+  }
+
+  &__btn {
+  }
+}
+
+.section {
+  &__title--white {
+  }
+
+  &__subtitle-white {
+  }
+}
+
+// plan end ---------------------------------------------------------
+
+// Additions start ---------------------------------------------------------
+.additions {
+  &__wrapper {
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__item-title {
+  }
+
+  &__item-subtitle {
+  }
+
+  &__title {
+  }
+}
+
+// Additions end ---------------------------------------------------------
+
+// faq start ---------------------------------------------------------
+.faq {
+  &__wrapper {
+  }
+
+  &__title {
+  }
+
+  &__accordeon {
+  }
+}
+
+.faq-accordeon-item {
+  &__trigger {
+  }
+
+  &__title {
+  }
+
+  &__btn {
+  }
+
+  &__text {
+  }
+}
+
+// faq end ---------------------------------------------------------
+
+// form start ---------------------------------------------------------
+.form {
+  &__wrapper {
+  }
+
+  &__title {
+  }
+
+  &__suvtitle {
+  }
+
+  &__form {
+  }
+
+  &__input {
+  }
+
+  &__btn {
+  }
+}
+
+// form end ---------------------------------------------------------
+
+// footer start ---------------------------------------------------------
+.footer {
+  &__wrapper {
+  }
+
+  &__top {
+  }
+
+  &__mail {
+  }
+
+  &__watsap {
+  }
+
+  &__bottom {
+  }
+
+  &__copy {
+  }
+
+  &__list-right {
+  }
+}
+
+// footer end ---------------------------------------------------------

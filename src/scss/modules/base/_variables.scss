@@ -1,9 +1,10 @@
 // colors
+$color-white: #fff;
+$color-green: #49b97a;
 
 //fonts
-$font-family-base: "Inter";
-$font-family-heading: "Georgia", serif;
-$font-family-mono: "SFMono-Regular";
+$font-lato: "Lato", sans-serif;
+$font-work: "Work Sans", sans-serif;
 
 // ==============================================
 // Breakpoints
@@ -15,3 +16,9 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 1024px;
 $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1440px;
+
+// ==============================================
+// border-radius
+// ==============================================
+$border-r-s: 5px;
+$border-r-m: 10px;

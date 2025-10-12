@@ -1,20 +1,15 @@
 @use "variables" as *;
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-lato;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
+  background: #1d1d1d;
+  color: $color-white;
 }
 
 main {
@@ -22,7 +17,77 @@ main {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+.section {
+  margin-bottom: 160px;
+  &__title--white {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 110%; /* 52.8px */
+    span {
+      color: #5d5d5d;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 110%;
+    }
+  }
+  &__title--black {
+    color: #2a2a2a;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 110%; /* 52.8px */
+  }
+  &__subtitle-white {
+    color: #aeaeae;
+    text-align: center;
+    font-family: $font-work;
+    font-size: 20px;
+    line-height: 122%; /* 24.4px */
+  }
+  &__subtitle--black {
+    color: #434343;
+    text-align: center;
+    font-family: $font-work;
+    font-size: 20px;
+    line-height: 130%; /* 26px */
+  }
+}
+
+.btn {
+  border-radius: $border-r-s;
+  border: 1px solid $color-green;
+  padding: 17px;
+  color: $color-green;
+  font-family: $font-lato;
+  font-size: 16px;
+  line-height: 122%; /* 19.52px */
+  text-transform: uppercase;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  white-space: nowrap;
+}
+.btn-white {
+  border-radius: $border-r-s;
+  padding: 7px 17px;
+  font-family: $font-lato;
+  line-height: 122%; /* 19.52px */
+  text-transform: uppercase;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid $color-white;
+  color: $color-white;
+  font-size: 24px;
+  white-space: nowrap;
 }
