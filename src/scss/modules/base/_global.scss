@@ -23,6 +23,12 @@ main {
   max-width: 1360px;
   margin: 0 auto;
   padding: 0 30px;
+  @media (max-width: $breakpoint-lg) {
+    max-width: 952px;
+  }
+  @media (max-width: $breakpoint-md) {
+    max-width: 725px;
+  }
 }
 
 .section {
@@ -61,7 +67,46 @@ main {
     line-height: 130%; /* 26px */
   }
 }
-
+@media (max-width: $breakpoint-lg) {
+  .section {
+    margin-bottom: 82px;
+    &__title--white {
+      font-size: 36px;
+      span {
+        font-size: 36px;
+      }
+    }
+    &__title--black {
+      font-size: 36px;
+    }
+    &__subtitle-white {
+      font-size: 15px;
+    }
+    &__subtitle--black {
+      font-size: 15px;
+    }
+  }
+}
+@media (max-width: $breakpoint-md) {
+  .section {
+    margin-bottom: 120px;
+    &__title--white {
+      font-size: 32px;
+      span {
+        font-size: 32px;
+      }
+    }
+    &__title--black {
+      font-size: 32px;
+    }
+    &__subtitle-white {
+      font-size: 16px;
+    }
+    &__subtitle--black {
+      font-size: 16px;
+    }
+  }
+}
 .btn {
   border-radius: $border-r-s;
   border: 1px solid $color-green;
