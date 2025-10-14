@@ -23,7 +23,7 @@ async function styles() {
 // работа со скриптами
 function scripts() {
   return (
-    src("src/js/modules/*.js") // путь до файлов js
+    src("src/js/modules/**/*.js") // путь до файлов js
       .pipe(concat("main.js")) // объеденяет все файлы в один (в случае с минификацией изменить на main.min.js)
       //  .pipe(uglify()) // минифицирует js
       .pipe(dest("src/js")) // путь где будет хранится уже готовый js

@@ -122,7 +122,16 @@ main {
   justify-content: center;
   width: 100%;
   white-space: nowrap;
+  transition: all 0.3s;
+  cursor: pointer;
+  svg {
+    transition: all 0.3s;
+  }
+  svg path {
+    transition: all 0.3s;
+  }
 }
+
 .btn-white {
   border-radius: $border-r-s;
   padding: 7px 17px;
@@ -138,4 +147,22 @@ main {
   color: $color-white;
   font-size: 24px;
   white-space: nowrap;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .btn:hover {
+    border: 1px solid #32e17e;
+    color: #32e17e;
+    svg {
+      transform: rotate(-45deg);
+    }
+    svg path {
+      stroke: #32e17e;
+    }
+  }
+  .btn-white:hover {
+    border: 1px solid #ffffff78;
+    color: #ffffff78;
+  }
 }

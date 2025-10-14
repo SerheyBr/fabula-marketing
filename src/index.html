@@ -29,6 +29,7 @@
     <main>
       <!-- <button class="btn">btn-btn-green</button>
       <button class="btn-white">btn-btn-white</button> -->
+
       <div class="hero section">
   <div class="container">
     <div class="hero__wrapper">
@@ -43,11 +44,12 @@
           alt=""
           class="hero-bg__wrapper-small"
         />
-        <img
+        <!-- <img
           src="assets/images/hero/img-main.png"
           alt=""
           class="hero-bg__wrapper-main"
-        />
+        /> -->
+        <div class="hero-bg__wrapper-main"></div>
       </div>
       <h1 class="hero__title">
         Don't let <span>a bad website</span> slow a good startup
@@ -226,33 +228,36 @@
         <p class="mvp-body__title">How we fix it:</p>
         <div class="mvp-body__flex">
           <div class="mvp-card">
-            <img
+            <!-- <img
               src="assets/images/mvp/img-1.svg"
               alt="img"
               class="mvp-card__img"
-            />
+            /> -->
+            <div class="mvp-card__img mvp-card__img-lottie-1"></div>
             <p class="mvp-card__title">Websites that sell</p>
             <p class="mvp-card__text">
               We build conversion-focused sites that close demos and boost MRR.
             </p>
           </div>
           <div class="mvp-card">
-            <img
+            <!-- <img
               src="assets/images/mvp/img-2.svg"
               alt="img"
               class="mvp-card__img"
-            />
+            /> -->
+            <div class="mvp-card__img mvp-card__img-lottie-2"></div>
             <p class="mvp-card__title">Pitch-ready design</p>
             <p class="mvp-card__text">
               Your product, explained visually and verbally for investor decks
             </p>
           </div>
           <div class="mvp-card">
-            <img
+            <!-- <img
               src="assets/images/mvp/img-3.svg"
               alt="img"
               class="mvp-card__img"
-            />
+            /> -->
+            <div class="mvp-card__img mvp-card__img-lottie-3"></div>
             <p class="mvp-card__title">Built to scale</p>
             <p class="mvp-card__text">
               No templates. Just solid architecture, smart UX, and real research
@@ -298,19 +303,68 @@
       </p>
       <div class="belive-tabs">
         <div class="belive-tabs__triggers">
-          <button class="belive-tabs__trigger" data-tab="1">
-            <img src="assets/images/hero/logo-01.png" alt="logo" />
+          <button class="belive-tabs__trigger active" data-tab="1">
+            <img
+              src="assets/images/belive/tab-desable-1.svg"
+              alt="logo"
+              class="belive-tabs__trigger-disble"
+            />
+            <img
+              src="assets/images/belive/tab-active-1.svg"
+              alt="logo"
+              class="belive-tabs__trigger-active"
+            />
           </button>
           <button class="belive-tabs__trigger" data-tab="2">
-            <img src="assets/images/hero/logo-01.png" alt="logo" />
+            <img
+              src="assets/images/belive/tab-desable-2.svg"
+              alt="logo"
+              class="belive-tabs__trigger-disble"
+            />
+            <img
+              src="assets/images/belive/tab-active-2.svg"
+              alt="logo"
+              class="belive-tabs__trigger-active"
+            />
           </button>
           <button class="belive-tabs__trigger" data-tab="3">
-            <img src="assets/images/hero/logo-01.png" alt="logo" />
+            <img
+              src="assets/images/belive/tab-desable-3.svg"
+              alt="logo"
+              class="belive-tabs__trigger-disble"
+            />
+            <img
+              src="assets/images/belive/tab-active-3.svg"
+              alt="logo"
+              class="belive-tabs__trigger-active"
+            />
           </button>
           <button class="belive-tabs__trigger" data-tab="4">
-            <img src="assets/images/hero/logo-01.png" alt="logo" />
+            <img
+              src="assets/images/belive/tab-desable-4.svg"
+              alt="logo"
+              class="belive-tabs__trigger-disble"
+            />
+            <img
+              src="assets/images/belive/tab-active-4.svg"
+              alt="logo"
+              class="belive-tabs__trigger-active"
+            />
           </button>
+          <!-- <button class="belive-tabs__trigger" data-tab="5">
+            <img
+              src="assets/images/belive/tab-desable-5.svg"
+              alt="logo"
+              class="belive-tabs__trigger-disble"
+            />
+            <img
+              src="assets/images/belive/tab-active-5.svg"
+              alt="logo"
+              class="belive-tabs__trigger-active"
+            />
+          </button> -->
         </div>
+
         <div class="belive-tabs__body">
           <div class="belive-tab-content" data-tab="1">
             <div class="belive-tab-content__header">
@@ -439,7 +493,13 @@
                 </div>
               </div>
               <div class="belive-tab-content__body-img">
-                <img src="assets/images/belive/img-big.png" alt="img" />
+                <video autoplay muted loop playsinline>
+                  <source
+                    src="assets/images/webm/sentra.webm"
+                    type="video/webm"
+                  />
+                  Ваш браузер не поддерживает видео.
+                </video>
               </div>
             </div>
             <div
@@ -450,6 +510,416 @@
               <p class="belive-tab-content__word">{Wireframes}</p>
               <p class="belive-tab-content__word">{Usability testing}</p>
               <p class="belive-tab-content__word">{Visual design}</p>
+            </div>
+          </div>
+          <div class="belive-tab-content" data-tab="2">
+            <div class="belive-tab-content__header">
+              <div class="belive-tab-content__header-left">HR-tech / SaaS</div>
+              <div class="belive-tab-content__header-right">
+                <p>Series A</p>
+                <p>
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.00623 1L1 9.00623"
+                      stroke="#828282"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1 1L9.00623 9.00623"
+                      stroke="#828282"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </p>
+                <p>financing $15M</p>
+              </div>
+            </div>
+            <div class="belive-tab-content__body">
+              <div class="belive-tab-content__body-left-box">
+                <div class="belive-tab-content__flex">
+                  <div class="belive-tab-content__old">
+                    <p class="belive-tab-content__old-title">Old website</p>
+                    <img
+                      src="assets/images/belive/img-min2.png"
+                      alt="img"
+                      class="belive-tab-content__old-img"
+                    />
+                  </div>
+                  <div class="belive-tab-content__procents">
+                    <p class="belive-tab-content__procents-title">
+                      Metrics improved after redesign
+                    </p>
+                    <div class="belive-tab-content__procents-elements">
+                      <div class="belive-tab-content-procents-element no-data">
+                        <p class="belive-tab-content-procents-element__num">
+                          no data
+                        </p>
+                        <div
+                          class="belive-tab-content-procents-element__imgs"
+                        ></div>
+                        <p class="belive-tab-content-procents-element__title">
+                          Bounce rate
+                        </p>
+                      </div>
+                      <div class="belive-tab-content-procents-element">
+                        <p class="belive-tab-content-procents-element__num">
+                          +30%
+                        </p>
+                        <div class="belive-tab-content-procents-element__imgs">
+                          <img
+                            src="assets/images/belive/procent3.svg"
+                            alt=""
+                            class="belive-tab-content-procents-element__img"
+                          />
+                          <img
+                            src="assets/images/belive/procent4.svg"
+                            alt=""
+                            class="belive-tab-content-procents-element__img"
+                          />
+                        </div>
+                        <p class="belive-tab-content-procents-element__title">
+                          Conversion Rate
+                        </p>
+                      </div>
+                      <div class="belive-tab-content-procents-element">
+                        <p class="belive-tab-content-procents-element__num">
+                          +71%
+                        </p>
+                        <div class="belive-tab-content-procents-element__imgs">
+                          <img
+                            src="assets/images/belive/procent5.svg"
+                            alt=""
+                            class="belive-tab-content-procents-element__img"
+                          />
+                          <img
+                            src="assets/images/belive/procent6.svg"
+                            alt=""
+                            class="belive-tab-content-procents-element__img"
+                          />
+                        </div>
+                        <p class="belive-tab-content-procents-element__title">
+                          Session Time
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="belive-tab-content__citat">
+                  <p class="belive-tab-content__citat-text">
+                    The new design feels alive — dynamic, modern, and perfectly
+                    aligned with how we see our product. Our visitors now spend
+                    noticeably more time exploring the site.
+                  </p>
+                  <p class="belive-tab-content__citat-subtitle">
+                    Amit Rapaport
+                  </p>
+                </div>
+                <div
+                  class="belive-tab-content__words belive-tab-content__words--desc"
+                >
+                  <p class="belive-tab-content__word">{UX Research}</p>
+                  <p class="belive-tab-content__word">{Marketing Analysis}</p>
+                  <p class="belive-tab-content__word">{Wireframes}</p>
+                  <p class="belive-tab-content__word">{Usability testing}</p>
+                  <p class="belive-tab-content__word">{3d modeling}</p>
+                  <p class="belive-tab-content__word">{Animation}</p>
+                  <p class="belive-tab-content__word">{Visual design}</p>
+                  <p class="belive-tab-content__word">{Development}</p>
+                </div>
+              </div>
+              <div class="belive-tab-content__body-img">
+                <video autoplay muted loop playsinline preload="none">
+                  <source
+                    src="assets/images/webm/compete.webm"
+                    type="video/webm"
+                  />
+                  Ваш браузер не поддерживает видео.
+                </video>
+              </div>
+            </div>
+            <div
+              class="belive-tab-content__words belive-tab-content__words--mobill"
+            >
+              <p class="belive-tab-content__word">{UX Research}</p>
+              <p class="belive-tab-content__word">{Marketing Analysis}</p>
+              <p class="belive-tab-content__word">{Wireframes}</p>
+              <p class="belive-tab-content__word">{Usability testing}</p>
+              <p class="belive-tab-content__word">{3d modeling}</p>
+              <p class="belive-tab-content__word">{Animation}</p>
+              <p class="belive-tab-content__word">{Visual design}</p>
+              <p class="belive-tab-content__word">{Development}</p>
+            </div>
+          </div>
+          <div class="belive-tab-content" data-tab="3">
+            <div class="belive-tab-content__header">
+              <div class="belive-tab-content__header-left">Green energy</div>
+              <div class="belive-tab-content__header-right">
+                <p>Series B</p>
+                <p>
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.00623 1L1 9.00623"
+                      stroke="#828282"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1 1L9.00623 9.00623"
+                      stroke="#828282"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </p>
+                <p>financing $180M</p>
+              </div>
+            </div>
+            <div class="belive-tab-content__body">
+              <div class="belive-tab-content__body-left-box">
+                <div class="belive-tab-content__flex">
+                  <div class="belive-tab-content__old">
+                    <p class="belive-tab-content__old-title">Old website</p>
+                    <img
+                      src="assets/images/belive/img-min3.png"
+                      alt="img"
+                      class="belive-tab-content__old-img"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="belive-tab-content__procents">
+                    <p class="belive-tab-content__procents-title">
+                      Metrics improved after redesign
+                    </p>
+                    <div class="belive-tab-content__procents-elements">
+                      <div class="belive-tab-content-procents-element no-data">
+                        <p class="belive-tab-content-procents-element__num">
+                          no data
+                        </p>
+                        <div
+                          class="belive-tab-content-procents-element__imgs"
+                        ></div>
+                        <p class="belive-tab-content-procents-element__title">
+                          Bounce rate
+                        </p>
+                      </div>
+                      <div class="belive-tab-content-procents-element no-data">
+                        <p class="belive-tab-content-procents-element__num">
+                          no data
+                        </p>
+                        <div
+                          class="belive-tab-content-procents-element__imgs"
+                        ></div>
+                        <p class="belive-tab-content-procents-element__title">
+                          Conversion Rate
+                        </p>
+                      </div>
+                      <div class="belive-tab-content-procents-element no-data">
+                        <p class="belive-tab-content-procents-element__num">
+                          no data
+                        </p>
+                        <div
+                          class="belive-tab-content-procents-element__imgs"
+                        ></div>
+                        <p class="belive-tab-content-procents-element__title">
+                          Session Time
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="belive-tab-content__citat">
+                  <p class="belive-tab-content__citat-text">
+                    You managed to turn complex technology into something
+                    visually powerful and inspiring. The 3D and motion design
+                    made our innovation feel tangible.
+                  </p>
+                  <p class="belive-tab-content__citat-subtitle">Rotem Arad</p>
+                </div>
+                <div
+                  class="belive-tab-content__words belive-tab-content__words--desc"
+                >
+                  <p class="belive-tab-content__word">{UX Research}</p>
+                  <p class="belive-tab-content__word">{Marketing Analysis}</p>
+                  <p class="belive-tab-content__word">{Wireframes}</p>
+                  <p class="belive-tab-content__word">{Usability testing}</p>
+                  <p class="belive-tab-content__word">{3d modeling}</p>
+                  <p class="belive-tab-content__word">{Animation}</p>
+                  <p class="belive-tab-content__word">{Visual design}</p>
+                </div>
+              </div>
+              <div class="belive-tab-content__body-img">
+                <video autoplay muted loop playsinline preload="none">
+                  <source
+                    src="assets/images/webm/h2pro.webm"
+                    type="video/webm"
+                  />
+                  Ваш браузер не поддерживает видео.
+                </video>
+              </div>
+            </div>
+            <div
+              class="belive-tab-content__words belive-tab-content__words--mobill"
+            >
+              <p class="belive-tab-content__word">{UX Research}</p>
+              <p class="belive-tab-content__word">{Marketing Analysis}</p>
+              <p class="belive-tab-content__word">{Wireframes}</p>
+              <p class="belive-tab-content__word">{Usability testing}</p>
+              <p class="belive-tab-content__word">{3d modeling}</p>
+              <p class="belive-tab-content__word">{Animation}</p>
+              <p class="belive-tab-content__word">{Visual design}</p>
+            </div>
+          </div>
+          <div class="belive-tab-content" data-tab="4">
+            <div class="belive-tab-content__header">
+              <div class="belive-tab-content__header-left">Biotech</div>
+              <div class="belive-tab-content__header-right">
+                <p>Series C</p>
+                <p>
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.00623 1L1 9.00623"
+                      stroke="#828282"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1 1L9.00623 9.00623"
+                      stroke="#828282"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </p>
+                <p>financing $30M</p>
+              </div>
+            </div>
+            <div class="belive-tab-content__body">
+              <div class="belive-tab-content__body-left-box">
+                <div class="belive-tab-content__flex">
+                  <div class="belive-tab-content__old">
+                    <p class="belive-tab-content__old-title">Old website</p>
+                    <img
+                      src="assets/images/belive/img-min4.png"
+                      alt="img"
+                      class="belive-tab-content__old-img"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="belive-tab-content__procents">
+                    <p class="belive-tab-content__procents-title">
+                      Metrics improved after redesign
+                    </p>
+                    <div class="belive-tab-content__procents-elements">
+                      <div class="belive-tab-content-procents-element">
+                        <p class="belive-tab-content-procents-element__num">
+                          -25%
+                        </p>
+                        <div class="belive-tab-content-procents-element__imgs">
+                          <img
+                            src="assets/images/belive/procent1.svg"
+                            alt=""
+                            class="belive-tab-content-procents-element__img"
+                          />
+                          <img
+                            src="assets/images/belive/procent2.svg"
+                            alt=""
+                            class="belive-tab-content-procents-element__img"
+                          />
+                        </div>
+                        <p class="belive-tab-content-procents-element__title">
+                          Bounce rate
+                        </p>
+                      </div>
+                      <div class="belive-tab-content-procents-element no-data">
+                        <p class="belive-tab-content-procents-element__num">
+                          no data
+                        </p>
+                        <div
+                          class="belive-tab-content-procents-element__imgs"
+                        ></div>
+                        <p class="belive-tab-content-procents-element__title">
+                          Conversion Rate
+                        </p>
+                      </div>
+                      <div class="belive-tab-content-procents-element">
+                        <p class="belive-tab-content-procents-element__num">
+                          +45%
+                        </p>
+                        <div class="belive-tab-content-procents-element__imgs">
+                          <img
+                            src="assets/images/belive/procent5.svg"
+                            alt=""
+                            class="belive-tab-content-procents-element__img"
+                          />
+                          <img
+                            src="assets/images/belive/procent6.svg"
+                            alt=""
+                            class="belive-tab-content-procents-element__img"
+                          />
+                        </div>
+                        <p class="belive-tab-content-procents-element__title">
+                          Session Time
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="belive-tab-content__citat">
+                  <p class="belive-tab-content__citat-text">
+                    The redesign completely transformed how we present
+                    ourselves. It looks professional yet human — exactly the
+                    balance we wanted.
+                  </p>
+                  <p class="belive-tab-content__citat-subtitle">Nora Nseir</p>
+                </div>
+                <div
+                  class="belive-tab-content__words belive-tab-content__words--desc"
+                >
+                  <p class="belive-tab-content__word">{UX Research}</p>
+                  <p class="belive-tab-content__word">{Marketing Analysis}</p>
+                  <p class="belive-tab-content__word">{Wireframes}</p>
+                  <p class="belive-tab-content__word">{Visual design}</p>
+                  <p class="belive-tab-content__word">{Development}</p>
+                </div>
+              </div>
+              <div class="belive-tab-content__body-img">
+                <video autoplay muted loop playsinline preload="none">
+                  <source
+                    src="assets/images/webm/nurami.webm"
+                    type="video/webm"
+                  />
+                  Ваш браузер не поддерживает видео.
+                </video>
+              </div>
+            </div>
+            <div
+              class="belive-tab-content__words belive-tab-content__words--mobill"
+            >
+              <p class="belive-tab-content__word">{UX Research}</p>
+              <p class="belive-tab-content__word">{Marketing Analysis}</p>
+              <p class="belive-tab-content__word">{Wireframes}</p>
+              <p class="belive-tab-content__word">{Visual design}</p>
+              <p class="belive-tab-content__word">{Development}</p>
             </div>
           </div>
         </div>
@@ -562,22 +1032,28 @@
       <div class="guarantees__body">
         <div class="guarantees-item guarantees-item--1">
           <div class="guarantees-item__body">
-            <img
+            <!-- <img
               src="assets/images/gurantees/img1.png"
               alt=""
               class="guarantees-item__img"
-            />
+            /> -->
+            <div
+              class="guarantees-item__img guarantees-item__img-lottie-1"
+            ></div>
             <p class="guarantees-item__title">Missed a deadline?</p>
             <p class="guarantees-item__text">We pay you 5% back.</p>
           </div>
         </div>
         <div class="guarantees-item guarantees-item--2">
           <div class="guarantees-item__body">
-            <img
+            <!-- <img
               src="assets/images/gurantees/img2.png"
               alt=""
               class="guarantees-item__img"
-            />
+            /> -->
+            <div
+              class="guarantees-item__img guarantees-item__img-lottie-2"
+            ></div>
             <p class="guarantees-item__title">
               We don’t trap clients. Not feeling the concept?
             </p>
@@ -588,11 +1064,14 @@
         </div>
         <div class="guarantees-item guarantees-item--3">
           <div class="guarantees-item__body">
-            <img
+            <!-- <img
               src="assets/images/gurantees/img3.png"
               alt=""
               class="guarantees-item__img"
-            />
+            /> -->
+            <div
+              class="guarantees-item__img guarantees-item__img-lottie-3"
+            ></div>
             <p class="guarantees-item__title">Two rounds of edits included</p>
             <p class="guarantees-item__text">We work until it hits the mark</p>
           </div>
@@ -757,11 +1236,14 @@
                 For testing ideas, and launching fast to market.
               </p>
             </div>
-            <img
+            <!-- <img
               src="assets/images/pricing/icon-3.png"
               alt="img"
               class="pricing-item__header-img"
-            />
+            /> -->
+            <div
+              class="pricing-item__header-img pricing-item__header-img-lottie-1"
+            ></div>
           </div>
           <ul class="pricing-item__body">
             <li class="pricing-item__body-item">
@@ -816,11 +1298,14 @@
                 For startups with active growth and sales
               </p>
             </div>
-            <img
+            <!-- <img
               src="assets/images/pricing/icon-1.png"
               alt="img"
               class="pricing-item__header-img"
-            />
+            /> -->
+            <div
+              class="pricing-item__header-img pricing-item__header-img-lottie-2"
+            ></div>
           </div>
           <ul class="pricing-item__body">
             <li class="pricing-item__body-item">
@@ -879,11 +1364,14 @@
                 For scaling and more complex requirements
               </p>
             </div>
-            <img
+            <!-- <img
               src="assets/images/pricing/icon-2.png"
               alt="img"
               class="pricing-item__header-img"
-            />
+            /> -->
+            <div
+              class="pricing-item__header-img pricing-item__header-img-lottie-3"
+            ></div>
           </div>
           <ul class="pricing-item__body">
             <li class="pricing-item__body-item--title">
@@ -1039,7 +1527,7 @@
     <div class="faq__wrapper">
       <h3 class="faq__title section__title--black">Before you ask</h3>
       <div class="faq__accordeon">
-        <div class="faq-accordeon-item active">
+        <div class="faq-accordeon-item">
           <div class="faq-accordeon-item__trigger">
             <p class="faq-accordeon-item__title">
               We’re still early stage. Do you even take projects like that?
@@ -1288,6 +1776,9 @@
 </footer>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+    <script src="assets/libs/gsap/ScrollTrigger.min.js"></script>
+    <script src="assets/libs/gsap/gsap.min.js"></script>
     <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
