@@ -65,3 +65,40 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// проценты в belive
+document
+  .querySelectorAll(".belive-tab-content-procents-element")
+  .forEach((el) => {
+    const grayPercent = el.dataset.gray;
+    const greenPercent = el.dataset.green;
+
+    const grayImg = el.querySelector(".gray");
+    const greenImg = el.querySelector(".green");
+
+    if (grayImg) grayImg.style.clipPath = `inset( ${100 - grayPercent}% 0 0 0)`;
+    if (greenImg)
+      greenImg.style.clipPath = `inset( ${100 - greenPercent}% 0 0 0)`;
+  });
+
+//   фиксированая кнопка в хедере
+function updateWhatsAppButton() {
+  const wrapper = document.querySelector(".header__wrapper");
+  const btn = document.querySelector(".header__btn");
+
+  if (!wrapper || !btn) return;
+
+  const rect = wrapper.getBoundingClientRect();
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  // Фиксируем кнопку на том же уровне, что wrapper
+  btn.style.top = `${rect.top + scrollTop}px`;
+
+  // Кнопка приклеена к правому краю wrapper
+  btn.style.right = `${window.innerWidth - (rect.left + rect.width)}px`;
+}
+
+// При загрузке и ресайзе
+window.addEventListener("DOMContentLoaded", updateWhatsAppButton);
+window.addEventListener("resize", updateWhatsAppButton);
+// window.addEventListener("scroll", updateWhatsAppButton); // если нужно

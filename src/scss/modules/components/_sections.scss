@@ -7,12 +7,19 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 60px;
+    position: relative;
   }
 
   &__logo {
   }
   &__btn {
     max-width: max-content;
+    position: fixed; /* фиксируем относительно окна */
+    top: 0; /* будем вычислять через JS */
+    right: 0; /* будем вычислять через JS */
+    z-index: 1000;
+    transition: right 0.2s ease, top 0.2s ease;
+    mix-blend-mode: difference;
   }
 }
 @media (max-width: $breakpoint-lg) {
@@ -67,6 +74,7 @@
     margin: 0 auto;
     margin-bottom: 11px;
     margin-top: 74px;
+    position: relative;
     span {
       color: #5d5d5d;
       font-size: 50px;
@@ -206,9 +214,9 @@
 }
 .hero-bg {
   position: absolute;
-  top: -60%;
+  top: 0%;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -28%);
   width: 1475px;
   height: 1475px;
   z-index: -1;
@@ -273,9 +281,9 @@
   }
   .hero-bg {
     position: absolute;
-    top: -28%;
+    top: 0%;
     left: 51%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -25%);
     width: 997px;
     height: 997px;
     z-index: -1;
@@ -656,6 +664,7 @@
 
 .belive-tabs {
   margin-bottom: 40px;
+  width: 100%;
   &__triggers {
     display: flex;
     align-items: center;
@@ -707,6 +716,7 @@
     color: #71b48f;
     font-family: $font-work;
     line-height: 122%; /* 19.52px */
+    width: 100%;
   }
   &__header-right {
     line-height: 122%;
@@ -714,15 +724,18 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    white-space: nowrap;
   }
   &__body {
     display: flex;
     gap: 60px;
+    min-height: 476px;
   }
 
   &__body-left-box {
     display: flex;
     flex-direction: column;
+    flex: 0 0 50%;
   }
 
   &__flex {
@@ -742,6 +755,9 @@
   }
 
   &__old-img {
+    width: 272px;
+    height: 140px;
+    flex: 1;
   }
 
   &__procents {
@@ -836,12 +852,14 @@
   width: 106px;
   display: flex;
   flex-direction: column;
+  height: 134px;
   &__num {
     font-size: 24px;
     line-height: 102%;
     text-align: center;
     color: #71b48f;
-    margin-bottom: 12px;
+    // margin-bottom: 12px;
+    margin-bottom: auto;
   }
 
   &__imgs {
@@ -854,6 +872,7 @@
   }
 
   &__img {
+    transition: clip-path 0.8s ease;
   }
 
   &__title {
@@ -899,6 +918,11 @@
   text-align: center;
   color: #606060;
 }
+
+.belive-tab-content-procents-element__img.gray,
+.belive-tab-content-procents-element__img.green {
+  clip-path: inset(100% 0 0 0);
+}
 @media (max-width: $breakpoint-lg) {
   .belive {
     &__decore-left {
@@ -935,10 +959,12 @@
     &__body {
       gap: 30px;
       margin-bottom: 25px;
+      min-height: 461px;
     }
 
     &__body-left-box {
-      width: 36%;
+      // width: 36%;
+      flex: 0 0 38%;
     }
 
     &__flex {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset and base styles  */
 * {
   padding: 0px;
@@ -300,9 +301,16 @@ main {
   justify-content: space-between;
   align-items: center;
   margin-top: 60px;
+  position: relative;
 }
 .header__btn {
   max-width: max-content;
+  position: fixed; /* фиксируем относительно окна */
+  top: 0; /* будем вычислять через JS */
+  right: 0; /* будем вычислять через JS */
+  z-index: 1000;
+  transition: right 0.2s ease, top 0.2s ease;
+  mix-blend-mode: difference;
 }
 
 @media (max-width: 1024px) {
@@ -346,6 +354,7 @@ main {
   margin: 0 auto;
   margin-bottom: 11px;
   margin-top: 74px;
+  position: relative;
 }
 .hero__title span {
   color: #5d5d5d;
@@ -460,9 +469,9 @@ main {
 }
 .hero-bg {
   position: absolute;
-  top: -60%;
+  top: 0%;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -28%);
   width: 1475px;
   height: 1475px;
   z-index: -1;
@@ -516,9 +525,9 @@ main {
   }
   .hero-bg {
     position: absolute;
-    top: -28%;
+    top: 0%;
     left: 51%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -25%);
     width: 997px;
     height: 997px;
     z-index: -1;
@@ -769,6 +778,7 @@ main {
 
 .belive-tabs {
   margin-bottom: 40px;
+  width: 100%;
 }
 .belive-tabs__triggers {
   display: flex;
@@ -820,6 +830,7 @@ main {
   color: #71b48f;
   font-family: "Work Sans", sans-serif;
   line-height: 122%; /* 19.52px */
+  width: 100%;
 }
 .belive-tab-content__header-right {
   line-height: 122%;
@@ -827,14 +838,17 @@ main {
   display: flex;
   align-items: center;
   gap: 12px;
+  white-space: nowrap;
 }
 .belive-tab-content__body {
   display: flex;
   gap: 60px;
+  min-height: 476px;
 }
 .belive-tab-content__body-left-box {
   display: flex;
   flex-direction: column;
+  flex: 0 0 50%;
 }
 .belive-tab-content__flex {
   display: flex;
@@ -846,6 +860,11 @@ main {
   text-align: center;
   color: #f5f5f5;
   margin-bottom: 14px;
+}
+.belive-tab-content__old-img {
+  width: 272px;
+  height: 140px;
+  flex: 1;
 }
 .belive-tab-content__procents-title {
   margin-bottom: 18px;
@@ -927,13 +946,14 @@ main {
   width: 106px;
   display: flex;
   flex-direction: column;
+  height: 134px;
 }
 .belive-tab-content-procents-element__num {
   font-size: 24px;
   line-height: 102%;
   text-align: center;
   color: #71b48f;
-  margin-bottom: 12px;
+  margin-bottom: auto;
 }
 .belive-tab-content-procents-element__imgs {
   display: flex;
@@ -942,6 +962,9 @@ main {
   margin-bottom: auto;
   height: 50px;
   margin-bottom: 15px;
+}
+.belive-tab-content-procents-element__img {
+  transition: clip-path 0.8s ease;
 }
 .belive-tab-content-procents-element__title {
   font-weight: 400;
@@ -988,6 +1011,11 @@ main {
   color: #606060;
 }
 
+.belive-tab-content-procents-element__img.gray,
+.belive-tab-content-procents-element__img.green {
+  clip-path: inset(100% 0 0 0);
+}
+
 @media (max-width: 1024px) {
   .belive__decore-left {
     display: none;
@@ -1014,9 +1042,10 @@ main {
   .belive-tab-content__body {
     gap: 30px;
     margin-bottom: 25px;
+    min-height: 461px;
   }
   .belive-tab-content__body-left-box {
-    width: 36%;
+    flex: 0 0 38%;
   }
   .belive-tab-content__flex {
     margin-bottom: 35px;
