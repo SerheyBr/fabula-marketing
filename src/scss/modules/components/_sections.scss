@@ -20,6 +20,7 @@
     z-index: 1000;
     transition: right 0.2s ease, top 0.2s ease;
     mix-blend-mode: difference;
+    font-size: 16px;
   }
 }
 @media (max-width: $breakpoint-lg) {
@@ -41,6 +42,7 @@
   .header {
     &__wrapper {
       margin-top: 30px;
+      min-height: 45px;
     }
 
     &__logo {
@@ -85,7 +87,7 @@
   }
 
   &__subtitle {
-    color: #fff;
+    color: #b9b9b9;
     text-align: center;
     font-family: $font-work;
     font-size: 24px;
@@ -159,49 +161,50 @@
       position: absolute;
       top: 0;
       width: 100px;
-      height: 100%;
+      height: 40px;
       z-index: 2;
       pointer-events: none;
       right: -40px;
       background: linear-gradient(
         to left,
-        #1f1f1f 0%,
-        #1d1d1d 98%,
+        #1d1d1d 0%,
+        #1d1d1d 90%,
         transparent 100%
       );
       filter: blur(6px);
+      // background-color: red;
     }
     &::before {
       content: "";
       position: absolute;
       top: 0;
       width: 100px;
-      height: 100%;
+      height: 40px;
       z-index: 2;
       pointer-events: none;
       left: -50px;
       background: linear-gradient(
         to left,
-        #1f1f1f 0%,
-        #1d1d1d 98%,
+        #1d1d1d 0%,
+        #1d1d1d 90%,
         transparent 100%
       );
       filter: blur(6px);
+      background-color: red;
     }
   }
 
   &__logos {
     display: flex;
-    gap: 80px;
     width: max-content;
     animation: scroll 30s linear infinite;
     margin-bottom: 40px;
   }
   &__logos-trak {
     display: flex;
-    gap: 80px;
   }
   &__logo {
+    padding: 0 40px;
   }
 }
 @keyframes scroll {
@@ -356,6 +359,7 @@
       justify-content: center;
       flex-direction: column;
       text-align: center;
+      border-radius: 5px;
     }
     &__box--width {
       p {
@@ -367,16 +371,46 @@
     }
 
     &__box-subtitle {
+      font-size: 15px;
+    }
+    &__logos {
+    }
+    &__logos-trak {
+      display: flex;
+    }
+    &__logo {
+      padding: 0 20px;
     }
   }
   .hero-bg {
-    top: -7%;
+    top: 45%;
     left: 51%;
     width: 785px;
     height: 785px;
     &__wrapper-main {
       width: 349px;
       height: 349px;
+    }
+  }
+}
+
+// бг по высоте
+@media (min-height: 1000px) {
+  .hero-bg {
+    top: 184%;
+    &__wrapper-main {
+      width: 652px;
+      height: 652px;
+    }
+  }
+}
+@media (min-height: 1300px) {
+  .hero-bg {
+    top: 300%;
+
+    &__wrapper-main {
+      width: 752px;
+      height: 752px;
     }
   }
 }
@@ -725,6 +759,9 @@
     align-items: center;
     gap: 12px;
     white-space: nowrap;
+    p {
+      min-width: 10px;
+    }
   }
   &__body {
     display: flex;
@@ -1312,6 +1349,7 @@
     margin-left: -77px;
     margin-right: 50px;
     // margin-right: 31px;
+
     &::before {
       width: 143px;
       height: 143px;
@@ -1321,6 +1359,8 @@
   &__3 {
     height: 475px;
     margin-right: 0px;
+    position: relative;
+    z-index: 1;
     &::before {
       width: 490px;
       height: 490px;
@@ -1328,6 +1368,7 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
+      z-index: 0;
     }
   }
 
@@ -1880,7 +1921,18 @@
     line-height: 122%; /* 21.96px */
   }
 }
-
+.guarantees-item--1 {
+  position: relative;
+  z-index: 1;
+}
+.guarantees-item--2 {
+  position: relative;
+  z-index: 5;
+}
+.guarantees-item--3 {
+  position: relative;
+  z-index: 1;
+}
 .guarantees-item--1 .guarantees-item__title {
   max-width: 181px;
 }
@@ -1893,6 +1945,7 @@
   transform: translateX(-50%);
   width: 621px;
   height: 621px;
+  border: none;
   background-color: #1d1d1d;
   background-image: url("../assets/images/gurantees/img2-wrapper.png");
   background-position: center;
@@ -1933,7 +1986,7 @@
 
   &__border--left-top {
     top: 0;
-    left: 0;
+    left: -1.5px;
   }
 
   &__border--right-top {
@@ -1943,7 +1996,7 @@
 
   &__border--left-bottom {
     bottom: 0;
-    left: 0;
+    left: -1.5px;
   }
 
   &__border--right-bottom {
@@ -2633,6 +2686,7 @@
 }
 @media (max-width: $breakpoint-sm) {
   .pricing {
+    margin-bottom: 90px;
     &__titl {
       max-width: 300px;
 
@@ -2691,10 +2745,12 @@
     &__footer-subtitle {
       margin-bottom: 13px;
       font-size: 16px;
+      text-align: center;
     }
 
     &__footer-button {
       width: 100%;
+      font-size: 16px;
     }
   }
   .pricing-item--green {
@@ -2835,6 +2891,7 @@
 }
 @media (max-width: $breakpoint-sm) {
   .plan {
+    margin-bottom: 90px;
     &__box {
       padding: 35px;
 
@@ -3153,9 +3210,9 @@
     margin-top: 15px;
     max-width: 660px;
     max-height: 0px;
-    transition: all 0.3s;
+
     opacity: 0;
-    position: relative;
+    position: absolute;
     z-index: -1;
   }
 }
@@ -3163,6 +3220,8 @@
   max-height: 500px;
   z-index: 1;
   opacity: 1;
+  position: static;
+  transition: all 0.3s;
 }
 .faq-accordeon-item.active .faq-accordeon-item__btn {
   transform: rotate(45deg);
@@ -3226,6 +3285,10 @@
       max-width: 265px;
       margin-top: 10px;
     }
+    &__btn {
+      width: 100%;
+      max-width: 16px;
+    }
   }
 }
 // faq end ---------------------------------------------------------
@@ -3236,7 +3299,7 @@
   border-radius: 0 0 20px 20px;
   padding: 172px 0;
   background-image: url("../assets/images/form/bg.png");
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   &__wrapper {
@@ -3291,7 +3354,7 @@
 }
 @media (max-width: $breakpoint-lg) {
   .form {
-    padding: 107px 0;
+    padding: 160px 0;
 
     &__wrapper {
       max-width: 440px;
@@ -3312,7 +3375,7 @@
 }
 @media (max-width: $breakpoint-md) {
   .form {
-    padding: 110px 0 62px 0;
+    padding: 115px 0;
 
     &__wrapper {
       max-width: 330px;

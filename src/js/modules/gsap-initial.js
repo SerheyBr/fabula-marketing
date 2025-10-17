@@ -97,3 +97,40 @@ gears.forEach(({ selector, rotation, speedFactor }) => {
     });
   }
 });
+
+// круги guranties
+ScrollTrigger.matchMedia({
+  // Для экранов шире 768px
+  "(min-width: 767px)": function () {
+    gsap.set(".guarantees-item--1", { x: "100%" });
+    gsap.set(".guarantees-item--3", { x: "-100%" });
+
+    gsap.to(".guarantees-item--1", {
+      x: "0%",
+      duration: 1.4,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".guarantees",
+        start: "center 80%",
+        toggleActions: "play none none reverse",
+      },
+    });
+
+    gsap.to(".guarantees-item--3", {
+      x: "0%",
+      duration: 1.4,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".guarantees",
+        start: "center 80%",
+        toggleActions: "play none none reverse",
+      },
+    });
+  },
+
+  // Для экранов уже 768px — ничего не делаем (опционально)
+  "(max-width: 768px)": function () {
+    // Можно сбросить позиции, если нужно
+    gsap.set(".guarantees-item--1, .guarantees-item--3", { clearProps: "all" });
+  },
+});
